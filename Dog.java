@@ -8,7 +8,7 @@ public class Dog extends Pet {
 
     public Dog(String name) {
         super(name);
-
+        initializeCutoffs();
     }
     @Override
     public String getType() {
@@ -26,7 +26,7 @@ public class Dog extends Pet {
         ArrayList<String> result = super.act();
         int decider = new Random().nextInt(10);
         if (decider < needFetch) {
-            result.add("The " + getType() + ", " + getName() + "played fetch.");
+            result.add("The " + getType() + ", " + getName() + " played fetch.");
         }
         return result;
     }

@@ -11,6 +11,11 @@ public class PetSimulator {
         pets.add(pet);
     }
     
+    /**
+     * This controls simulation
+     * @param hoursCount how many times user wants to loop
+     * @return activity of pets per hour
+     */
     public ArrayList<ArrayList<String>> simulate(int hoursCount) {
         ArrayList<ArrayList<String>> hourlyActivity = new ArrayList<ArrayList<String>>();
         for (int i = 0; i < hoursCount; i++) {

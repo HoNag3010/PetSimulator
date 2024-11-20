@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -29,7 +28,11 @@ public abstract class Pet {
     public void setNeedAttention(int needAttention) {
         this.needAttention = needAttention;
     }
-    
+
+    /**
+     * Generate a random integer to compare with their need to decide their act
+     * @return their act if successfully took an action
+     */
     public ArrayList<String> act() {
         ArrayList<String> actions = new ArrayList<String>();
         int decider;

@@ -8,7 +8,7 @@ public class Fish extends Pet {
 
     public Fish(String name) {
         super(name);
-
+    initializeCutoffs();
     }
     @Override
     public String getType() {
@@ -26,7 +26,7 @@ public class Fish extends Pet {
         ArrayList<String> result = super.act();
         int decider = new Random().nextInt(10);
         if (decider < needSwim) {
-            result.add("The " + getType() + ", " + getName() + "swam around its bowl.");
+            result.add("The " + getType() + ", " + getName() + " swam around its bowl.");
         }
         return result;
     }
